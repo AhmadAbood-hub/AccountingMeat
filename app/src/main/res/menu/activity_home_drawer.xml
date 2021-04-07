@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+      <group android:id="@+id/g12">
+
+
+
+        <item
+            android:id="@+id/nav_kill"
+            android:title="الذبحات" />
+      </group>
+        <group android:id="@+id/g1s2">
+        <item
+            android:id="@+id/nav_bill"
+             android:title="الفواتير" />   </group>
+        <group android:id="@+id/g12d">
+
+        <item
+            android:id="@+id/nav_spent"
+             android:title="المصاريف" />   </group>
+        <group android:id="@+id/g1ss2">
+
+        <item
+            android:id="@+id/nav_summry"
+             android:title="الملخص" />
+        </group>
+        <group android:id="@+id/g12as">
+
+          <item
+              android:id="@+id/nav_material"
+              android:title="المواد" />
+        </group>
+  <group android:id="@+id/g12asas">
+
+    <item
+        android:id="@+id/nav_backup"
+        android:title="نسخة احتياطية" />
+  </group>
+  <group android:id="@+id/g12asasd">
+
+    <item
+        android:id="@+id/nav_restore"
+        android:title="استرجاع" />
+  </group>
+</menu>

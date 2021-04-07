@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="أدخل أسم المادة"
+            android:padding="10dp"
+            android:textColor="@android:color/black" />
+
+        <Spinner
+            android:id="@+id/spn_Dialog_subject_bill_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+
+        <EditText
+            android:id="@+id/edt_Dialog_quantity_bill_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="أدخل الكمية"
+            android:inputType="numberDecimal"
+            android:padding="10dp"
+            />
+
+        <EditText
+            android:id="@+id/edt_Dialog_price_bill_items"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="أدخل السعر"
+            android:inputType="numberDecimal"
+
+            android:padding="10dp"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="right"
+            >
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:hint="السعر الاجمالي"
+                android:padding="10dp"
+                android:textColor="@android:color/black"
+                />
+            <TextView
+                android:id="@+id/result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_gravity="left"
+                android:textColor="@android:color/black"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layoutDirection="rtl"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:textDirection="rtl">
+
+            <Button
+                android:id="@+id/bt_save_bill_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="حفظ" />
+
+
+            <Button
+                android:id="@+id/bt_cancel_bill_items"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الغاء" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
